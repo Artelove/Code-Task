@@ -11,7 +11,7 @@
     {
         bool isSubsequence;
         bool canContinue;
-        int countSubsequence = 0;
+        int subsequenceCount = 0;
         foreach (string word in words)
         {
             isSubsequence = true;
@@ -36,8 +36,8 @@
             }
             if (!isSubsequence) 
                 continue;
-            countSubsequence++;
+            subsequenceCount++;
         }
-        return countSubsequence;
+        return subsequenceCount;
     }
 }

@@ -14,7 +14,7 @@ class Program
     public int KInversePairs(int n, int k)
     {
         int[,] dp = new int[n + 1, k + 1];
-        int countInversePairs = 0;
+        int inversePairsСount = 0;
         int MOD = 1000000007;
         dp[0, 0] = 1;
 
@@ -26,16 +26,16 @@ class Program
                 if (j == 0)
                 {
                     dp[i, j] = 1;
-                    countInversePairs = 1;
+                    inversePairsСount = 1;
                 }
                 else
                 {
-                    countInversePairs = (countInversePairs + dp[i - 1, j]) % MOD;
+                    inversePairsСount = (inversePairsСount + dp[i - 1, j]) % MOD;
                     if (j - i >= 0)
                     {
-                        countInversePairs = (countInversePairs + MOD - dp[i - 1, j - i]) % MOD;
+                        inversePairsСount = (inversePairsСount + MOD - dp[i - 1, j - i]) % MOD;
                     }
-                    dp[i, j] = countInversePairs;
+                    dp[i, j] = inversePairsСount;
                 }
             }
         }

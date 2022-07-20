@@ -10,11 +10,7 @@ class HelloWorld
     {
         HelloWorld helloWorld = new HelloWorld();
         Console.WriteLine("Hello World");
-        Console.WriteLine(helloWorld.FindPaths(45,
-35,
-47,
-20,
-31));
+        Console.WriteLine(helloWorld.FindPaths(45,35, 47, 20, 31));
     }
     public bool IsPositionOutOfBound(int i, int j)
     {
@@ -51,11 +47,11 @@ class HelloWorld
         cache = new long[m, n, maxMove+1];
         for (int i = 1; i <= maxMove; i++)
         {
-            long a = Move(i, startRow, startColumn) % 1000000007;
+            long a = Move(i, startRow, startColumn) % Module;
             countOfOutOfBoundary += a;
-            countOfOutOfBoundary %= 1000000007;
+            countOfOutOfBoundary %= Module;
         }
-        int intCount = (int)countOfOutOfBoundary % 1000000007; ;
+        int intCount = (int)countOfOutOfBoundary % Module; ;
         return intCount;
     }
 }

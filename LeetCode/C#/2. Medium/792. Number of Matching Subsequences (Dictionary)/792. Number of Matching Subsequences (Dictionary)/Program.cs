@@ -11,23 +11,23 @@
     {
         int count = 0;
         var wordCount = new Dictionary<string, int>();
-        var isSubSequenceConfirmed = new Dictionary<string, bool>();
+        var isSubSequenceConfirmedEarlier = new Dictionary<string, bool>();
 
         foreach (var word in words)
         {
             if (!wordCount.ContainsKey(word))
                 wordCount[word] = 0;
             wordCount[word]++;
-            isSubSequenceConfirmed[word] = false;
+            isSubSequenceConfirmedEarlier[word] = false;
         }
 
         foreach (var word in wordCount.Keys)
         {
-            if(isSubSequenceConfirmed[word]==true)
+            if(isSubSequenceConfirmedEarlier[word]==true)
                 count += wordCount[word];
             if (IsSubSequence(s, word))
             {
-                isSubSequenceConfirmed[word] = true;
+                isSubSequenceConfirmedEarlier[word] = true;
                 count += wordCount[word];
             }
         }

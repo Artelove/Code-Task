@@ -6,9 +6,6 @@ class Program
         int x = 123321;
         Program program = new Program();
         Console.WriteLine(program.IsPalindrome(x));
-        //return program.MaxAreaOfIsland(grid);
-
-
     }
 
     public bool IsPalindrome(int x)

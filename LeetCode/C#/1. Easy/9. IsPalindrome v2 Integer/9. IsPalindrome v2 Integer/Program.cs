@@ -10,25 +10,25 @@ class HelloWorld
     {
         int a, b, tmpX = x;
         int counter = 1;
-        int counterDigit = 0;
+        int digitCounter = 0;
         if(x<0) return false; 
         while (tmpX > 0)
         {
-            counterDigit++;
+            digitCounter++;
             tmpX /= 10;
         }
        
-        counterDigit--;
+        digitCounter--;
         while (true)
         {
             a = x % (IntPow(10,counter)) / (IntPow(10,counter - 1));
-            b = x / IntPow(10,counterDigit) % (IntPow(10, 1));
-            if (counter == 1) b = x / IntPow(10, counterDigit) % 10;
-            if (counterDigit < counter) return true;
+            b = x / IntPow(10,digitCounter) % (IntPow(10, 1));
+            if (counter == 1) b = x / IntPow(10, digitCounter) % 10;
+            if (digitCounter < counter) return true;
             if (a != b) 
                 return false;
             counter++;
-            counterDigit--;
+            digitCounter--;
         }
         return true;
     }

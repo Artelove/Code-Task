@@ -10,9 +10,6 @@ class Program
             {1}
             };
         Console.WriteLine(program.MaxAreaOfIsland(grid));
-        //return program.MaxAreaOfIsland(grid);
-
-
     }
 
     private int SearchNearbyCells(int[,] grid, int i, int j)
