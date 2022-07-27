@@ -11,7 +11,7 @@
 
 public class Solution
 {
-    List<TreeNode> list = new List<TreeNode>();
+    private List<TreeNode> _list = new List<TreeNode>();
     static void Main()
     {
         Solution solution = new Solution();
@@ -23,28 +23,23 @@ public class Solution
             right: new TreeNode(6)));
         solution.Flatten(root);
     }
-    public void inorder(TreeNode root)
+    private void inorder(TreeNode root)
     {
         if (root == null) return;
         Console.WriteLine(root.val);
-        list.Add(root);
+        _list.Add(root);
         inorder(root.left);
         inorder(root.right);
     }
     public void Flatten(TreeNode root)
     {
         inorder(root);
-        TreeNode basicRoot = root;
-        foreach (var item in list)
+        if (_list.Count == 1) return;
+        foreach (var item in _list)
         {
             item.left = null;
             root.right = item;
             root = root.right;
-        }
-        while(basicRoot != null)
-        {
-            Console.WriteLine(basicRoot.val);
-            basicRoot = basicRoot.right;
         }
     }
 }
