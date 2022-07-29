@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "890. Find and Replace Pattern (check by one char)", "890. Find and Replace Pattern (check by one char)\890. Find and Replace Pattern (check by one char).csproj", "{30705342-1B21-427D-BA8E-6C8B8A3E6CED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30705342-1B21-427D-BA8E-6C8B8A3E6CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30705342-1B21-427D-BA8E-6C8B8A3E6CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30705342-1B21-427D-BA8E-6C8B8A3E6CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30705342-1B21-427D-BA8E-6C8B8A3E6CED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC947A30-E1D9-4725-B111-B67FF5194B28}
+	EndGlobalSection
+EndGlobal
