@@ -24,15 +24,22 @@
 
     public int SumRange(int left, int right)
     {
-        int sum = _allArraySum;
-        for (int i = 0; i < left; i++)
+        int sum = 0;
+        if (right - left > _nums.Length / 2)
         {
-            sum -= _nums[i];
+            sum = _allArraySum;
+            for (int i = 0; i < left; i++)
+            {
+                sum -= _nums[i];
+            }
+            for (int i = right + 1; i < _nums.Length; i++)
+            {
+                sum -= _nums[i];
+            }
         }
-        for (int i = right + 1; i < _nums.Length; i++)
-        {
-            sum -= _nums[i];
-        }
+        else
+            for (int i = left; i <= right; i++)
+                sum += _nums[i];
         return sum;
     }
 }
