@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "58. Length of Last Word (O(n))", "58. Length of Last Word (O(n))\58. Length of Last Word (O(n)).csproj", "{08F13FF1-CB05-4538-9B78-5516DF3CF35E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08F13FF1-CB05-4538-9B78-5516DF3CF35E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08F13FF1-CB05-4538-9B78-5516DF3CF35E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08F13FF1-CB05-4538-9B78-5516DF3CF35E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08F13FF1-CB05-4538-9B78-5516DF3CF35E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CAA132F0-7056-4D39-A7B4-8D055C12D0D1}
+	EndGlobalSection
+EndGlobal
