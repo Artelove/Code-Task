@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.26)
+project(28__Find_the_Index_of_the_First_Occurrence_in_a_String)
+
+set(CMAKE_CXX_STANDARD 23)
+
+add_executable(28__Find_the_Index_of_the_First_Occurrence_in_a_String main.cpp)
