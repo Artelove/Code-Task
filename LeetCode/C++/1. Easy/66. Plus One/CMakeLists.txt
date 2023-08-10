@@ -3,4 +3,4 @@ project(66__Plus_One)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(66__Plus_One main.cpp)
+add_executable(66__Plus_One "66. Plus One .cpp")
